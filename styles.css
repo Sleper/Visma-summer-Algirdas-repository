@@ -1,0 +1,44 @@
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+}
+
+nav {
+    border: 1px solid gray;
+}
+
+.container {
+    border: 1px solid gray;
+    display: grid;
+    grid-template-columns: 18% 82%;
+    grid-template-rows: 10% 90%;
+}
+.navigate {
+    border: 1px solid gray;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.side-navigate {
+    display: grid;
+    grid-template-rows: 36% 32% 32%;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.frame {
+    border: 1px solid gray;
+}
+
